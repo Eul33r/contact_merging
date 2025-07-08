@@ -59,7 +59,7 @@ Eksportuje kontakty z `.csv` z powrotem do formatu `.vcf`, z możliwością:
 ### Instalacja:
 
 ```
-git clone https://github.com/Eul33r/kontakty-tools.git
+git clone https://github.com/Eul33r/contact_merging.git
 cd kontakty-tools
 ```
 
