@@ -74,7 +74,11 @@ python3 csv_to_vcf.py           # Konwersja CSV → VCF z wyborem trybu
 ---
 
 ## 🧠 Co warto wiedzieć
-
+* Jeśli przy eksporcie kontakty uległy zduplikowaniu, to duplikaty można usunąć unixowym poleceniem:
+  `find . -name "* (1).vcf" -delete`
+  Przy czym polecenie zakłada, że mamy duplikaty postaci OsobaX.vcf oraz OsobaX(1).vcf
+* Jeśli nie wyeksportował się "zbiorczy" plik .vcf, tylko kilka z osobna, to łatwo je połączyć w jeden duży, poleceniem:
+  `cat *.vcf > kontakty_razem.vcf`
 * Programy uwzględniają niestandardowe pliki z eksportu starszych telefonów.
 * Pliki CSV mogą być ręcznie edytowane (np. w Excelu) przed powrotnym eksportem.
 * Tworzony jest osobny folder dla eksportów VCF, aby nie nadpisać danych.
